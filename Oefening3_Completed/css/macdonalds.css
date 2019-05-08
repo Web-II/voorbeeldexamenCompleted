@@ -1,0 +1,97 @@
+body {
+   margin: 0px;
+   padding: 0px;
+}
+
+.main{
+   width: 850px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+h1{
+   margin: 0px;
+   padding: 5px;
+   font-family: Arial, sans-serif;
+   font-weight: 900;
+   line-height: 1.2em;
+   color: #004812;
+   font-size: 2.5em;
+   float:left;
+}
+
+.mandje {
+   padding: 15px;
+   float:right;
+}
+
+.type {
+   clear: both;
+}
+
+.eenmenu{
+   border: 1px solid #004812;
+   border-radius: 15px;
+   padding: 10px;
+   margin: 5px;
+   overflow: auto;
+}
+
+.eenmenu button {
+   margin-left:40px;
+   display: block;
+   padding:5px 10px
+}
+
+.eenmenu ul{
+   list-style-image: url('../images/plus.png');
+}
+
+.eenmenu .links{
+   width: 260px;
+   margin: 5px;  
+}
+
+.eenmenu .center{
+   width: 300px;
+   margin: 5px;  
+}
+
+.eenmenu .rechts{
+   text-align: center;
+   width: 260px;
+   margin: 5px;  
+}
+
+.eenmenu .flex{
+   display: flex;
+}
+
+.eenmenu .rechts img{
+   width: 100px;
+   border: 1px solid #004812;
+   border-radius: 15px;
+   margin: 5px;
+}
+
+.eenmenu h2{
+   margin: 0px;
+   text-align: center;
+   color: red;
+   font-variant: small-caps;
+   font-size: 2.0em;
+}
+
+.eenmenu .prijs{
+   font-weight: bold;
+   color: yellow ;
+   font-size: 65px;
+   width: 200px;
+   padding: 10px;
+   margin: 0px;
+}
+
+.fas {
+   font-size: 2.5em;
+   color:red;
+}

@@ -79,7 +79,7 @@ class MenusRepository {
 
     getMenusByType(type) {
         // Retourneert een array van Menu-objecten van een bepaald type.
-        if (type === 'Alles') return this._menus;
+        if (type === '') return this._menus;
         return this._menus.filter(
             menu => menu.type.toUpperCase() === type.toUpperCase()
         );

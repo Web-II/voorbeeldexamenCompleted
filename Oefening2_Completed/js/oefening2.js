@@ -12,22 +12,15 @@ class Schil {
 }
 
 class ElektronenApp {
-    constructor(window) {}
+    constructor() {
+        const schillen = [['K',2],['L',8],['M',18],['N',32],['O',32],['P',32],['Q',32]]
+        this._bohrAtoommodel = new Map(schillen);
+    }
 
-    berekenElektronenconf(aantalElektronen) {
-        const bohrAtoommodel = new Map();
-        bohrAtoommodel.set('K', 2);
-        bohrAtoommodel.set('L', 8);
-        bohrAtoommodel.set('M', 18);
-        bohrAtoommodel.set('N', 32);
-        bohrAtoommodel.set('O', 32);
-        bohrAtoommodel.set('P', 32);
-        bohrAtoommodel.set('Q', 32);
-        
+    berekenElektronenconf(aantalElektronen) {        
         const elektronenconf= [];
-
         let resterendAantal=aantalElektronen;
-        bohrAtoommodel.forEach((maxvalue, key) => {
+        this._bohrAtoommodel.forEach((maxvalue, key) => {
             if (resterendAantal > maxvalue) {
                 elektronenconf.push(new Schil(key,maxvalue));
                 resterendAantal -= maxvalue;
@@ -36,7 +29,7 @@ class ElektronenApp {
                 resterendAantal =0;
             }
         });
-        return elektronenconf;
+        this.toHtml(elektronenconf);
     }
 
     toHtml(configuratie) {
@@ -62,7 +55,6 @@ const init = function() {
             document.getElementById('aantalElektronen').value
         );
         const conf = elektronenApp.berekenElektronenconf(aantalElektronen);
-        elektronenApp.toHtml(conf);
     };
 };
 

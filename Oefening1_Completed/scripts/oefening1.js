@@ -88,7 +88,7 @@ const roos = {
 roos['latijnse naam'] = 'Rosa Rugosa';
 console.log(roos);
 
-// 8. Declareer een variabele geefHoofdLetter die een functie als waarde heeft. Deze functie
+// 8. Declareer een variabele geefHoofdletter die een functie als waarde heeft. Deze functie
 // heeft twee parameters genaamd tekst en positie
 // en retourneert de uppercase van de letter op de gevraagde positie in de tekst.
 // Voor de positie begin je niet te tellen vanaf 0, maar vanaf 1.
@@ -112,7 +112,7 @@ console.log(somGetallen); //6
 const paragraafArray = [...document.getElementsByTagName('p')];
 const aantal = paragraafArray.reduce(
     (accumulator, element) =>
-        element.innerText.includes('de') ? (accumulator += 1) : accumulator,0);
+        element.innerText.includes('de') ? (accumulator + 1) : accumulator,0);
 console.log(aantal); // 3
 
 // 11. Vervang de tekst van de laatste paragraaf in index.html nl. 'Vierde paragraaf'

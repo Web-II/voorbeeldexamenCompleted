@@ -1,7 +1,7 @@
 function fetchRequest(url) {
     // Retourneert een promise object met de JSON response
     // omgezet naar 'native Javascript objects'
-    return fetch(url).then(body => body.json());
+    return fetch(url).then(response => response.json());
 }
 
 class Menu {
